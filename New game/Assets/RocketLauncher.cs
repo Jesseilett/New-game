@@ -10,6 +10,7 @@ public class RocketLauncher : MonoBehaviour
     private float fireTimer = 0;                                                // Keep track of when we can fire again 
 
     public GameObject rocketPrefab;                                             // Reference to Rocket prefab so we spawn it 
+    public GameObject spawnPoint;                                               // Reference to the rocket spawn point
     public Vector3 spawnOffset;                                                 // A position offset for where the rocket is spawned so we dont spawn inside the gun 
     
 
@@ -38,8 +39,8 @@ public class RocketLauncher : MonoBehaviour
     {
         GameObject rocketInstance = Instantiate(rocketPrefab);                   //Spawn and store a new rocket prefab 
 
-        rocketInstance.transform.position = transform.position + spawnOffset;    // Apply the spawn offset relative to the gun position 
-        rocketInstance.transform.rotation = transform.rotation;                  // Rotate rocket to match guns rotation 
+        rocketInstance.transform.position = spawnPoint.transform.position;    // Apply the spawn offset relative to the gun position 
+        rocketInstance.transform.rotation = spawnPoint.transform.rotation;                  // Rotate rocket to match guns rotation 
 
         fireTimer = 0;                                                           // Reset fire timer 
     }
