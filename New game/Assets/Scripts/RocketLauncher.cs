@@ -37,11 +37,10 @@ public class RocketLauncher : MonoBehaviour
 
     public void Fire() 
     {
-        GameObject rocketInstance = Instantiate(rocketPrefab);                   //Spawn and store a new rocket prefab 
-
-        rocketInstance.transform.position = spawnPoint.transform.position;    // Apply the spawn offset relative to the gun position 
-        rocketInstance.transform.rotation = spawnPoint.transform.rotation;                  // Rotate rocket to match guns rotation 
+        Instantiate(rocketPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation); 
 
         fireTimer = 0;                                                           // Reset fire timer 
     }
+
+
 }

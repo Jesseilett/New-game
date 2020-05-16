@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 1013586396325112161}
   - component: {fileID: 7361338525559545260}
   - component: {fileID: 440583524294811298}
+  - component: {fileID: 5599273396002461935}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -155,3 +156,15 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 100}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &5599273396002461935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138869244326940031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c175bec519f0a45b00d5aeca2f1ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
