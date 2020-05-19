@@ -5,7 +5,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject losePanel;
+    public GameObject winPanel;
+    public string gameSceneName; 
+
     public GameObject[] m_Enemies;
+    public int enemyCount; 
+
+    void start()
+    {
+        enemyCount = m_Enemies.length; 
+    }
+
+    void update()
+    {
+        if (enemyCount <= 0)
+        {
+            WinGame; 
+        }
+    }
 
     private float m_gameTime = 0;
     public float GameTime { get { return m_gameTime; } }
@@ -113,7 +131,26 @@ public class GameManager : MonoBehaviour
         }
         return false; 
     }
-    
+
+    public void LoseGame()
+    {
+        losePanel.SetActive(true); 
+    }
+
+    public void WinGame()
+    {
+        winPanel.SetActive(true); 
+    }
+
+    public void RetryGame()
+    {
+        SceneManager.LoadScene(gameSceneName); 
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit(); 
+    }
 } 
 
 

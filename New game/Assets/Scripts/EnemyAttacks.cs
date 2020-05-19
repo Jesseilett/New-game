@@ -6,5 +6,6 @@ public class EnemyAttacks : MonoBehaviour
 {
     private bool m_CanShoot;
 
-    public float m_ShootDelay = 1f; 
+    public float m_HitDelay = 1f; 
 }
+
