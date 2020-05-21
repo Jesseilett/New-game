@@ -1621,7 +1621,7 @@ GameObject:
   - component: {fileID: 149459343}
   - component: {fileID: 149459346}
   m_Layer: 5
-  m_Name: Win
+  m_Name: winPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8379,12 +8379,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 623298195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef97e05ac38bec44a944b32051bc6820, type: 3}
+  m_Script: {fileID: 11500000, guid: ac537de6bb94a5b4fba635483b206bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartingHealth: 100
-  m_CurrentHealth: 100
-  m_Dead: 0
 --- !u!1 &627888693
 GameObject:
   m_ObjectHideFlags: 0
@@ -9656,7 +9653,7 @@ GameObject:
   - component: {fileID: 665924837}
   - component: {fileID: 665924836}
   m_Layer: 5
-  m_Name: Death
+  m_Name: losePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class GameManager : MonoBehaviour
 {
     public GameObject losePanel;
     public GameObject winPanel;
-    public string gameSceneName; 
+    public string gameSceneName;
+    
 
     public GameObject[] m_Enemies;
     public int enemyCount; 
@@ -19,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     void update()
     {
-        if (enemyCount <= 0)
+        if (enemyCount <= 0) 
         {
             WinGame; 
         }

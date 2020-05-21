@@ -10,7 +10,7 @@ public class HealthBars : MonoBehaviour
     public float m_CurrentHealth; 
     public bool m_Dead; 
 
-    public m_gm; 
+    public float m_gm; 
 
     private void OnEnable()
     {
@@ -46,6 +46,6 @@ public class HealthBars : MonoBehaviour
 
     private void Start()
     {
-        gm = GameObject.FindGameObjectsWithTag("GameController").GetComponent<GameManager>(); 
+        m_gm = GameObject.FindGameObjectsWithTag("GameController").GetComponent<GameManager>(); 
     }
 }

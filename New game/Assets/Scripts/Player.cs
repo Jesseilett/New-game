@@ -17,14 +17,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthUI.GetComponent<Text>().text = "Health: " + PlayerHealth
+        healthUI.GetComponent<Text>().text = "Health:" + PlayerHealth; 
+        
+            if (PlayerHealth <= 0) 
+            {
+                gm.LoseGame; 
+            }
 
-        if (playerHealth <= 0)
-        {
-            gm.LoseGame; 
-        }
-        
-            
-        
+
+       
     }
 }
